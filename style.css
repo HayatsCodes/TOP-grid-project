@@ -236,12 +236,39 @@ div[class^="card-"] {
   padding-top: 25px;
   border-radius: 10px;
   border-left: 8px solid #0369a1;
+  position: relative;
 }
 
 div[class^="card-"] p{
     font-size: 14px;
     margin-top: 3px;
     color: rgb(155, 152, 152);
+}
+
+.modify {
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+    position: absolute;
+    right: 20px;
+    bottom: 25px;
+}
+
+.modify div[class$="-icon"] {
+    height: 20px;
+    width: 20px;
+}
+
+.mark-icon {
+    background: url('assets/check-outline.svg');
+}
+
+.edit-icon {
+    background: url('assets/pencil.svg');
+}
+
+.trash-icon {
+    background: url('assets/trash-can-outline.svg');
 }
 
 .tasks-list {
@@ -299,10 +326,25 @@ div[class$="-img"] {
     height: 30px;
     width: 30px;
     border-radius: 15px;
-    background: url("https://images.unsplash.com/photo-1691673236501-3023c988eb2b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=387&q=80");
     background-position: center;
     background-size: cover;
     margin-top: -4px; 
+}
+
+.weather-img {
+    background: url("https://cdn.jim-nielsen.com/ios/512/weather-2021-12-07.png");
+}
+
+.time-img {
+    background: url('https://www.iconpacks.net/icons/2/free-time-icon-3487-thumb.png');
+}
+
+.integration-img {
+    background: url('https://cdn-icons-png.flaticon.com/512/1541/1541416.png');
+}
+
+.calendar-img {
+    background: url('https://cdn-icons-png.flaticon.com/512/1427/1427965.png');
 }
 
 div[class$="-widget"] {
